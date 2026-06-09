@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { site } from "~/data/site";
+import { PlaceholderImage } from "~/components/shared/PlaceholderImage";
 import { cn } from "~/utils/cn";
 
 const stagger = {
@@ -41,7 +42,7 @@ export function Hero() {
               variants={fadeUp}
               className="text-brand-600 font-semibold text-sm tracking-[0.2em] uppercase mb-6"
             >
-              Digital Marketing Agency — Indonesia
+              Digital Marketing Agency - Indonesia
             </motion.p>
 
             <motion.h1
@@ -90,17 +91,15 @@ export function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.9, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
           >
-            <div className="relative aspect-4/5 rounded-2xl overflow-hidden bg-gray-100 shadow-lg">
-              {/* Placeholder image via picsum — replace with real Nano Media photo */}
-              <img
-                src="https://picsum.photos/seed/nano-media-agency/800/1000"
-                alt="Nano Media office and team collaboration"
-                className="w-full h-full object-cover"
-                loading="eager"
-              />
-              {/* Subtle overlay to keep brand feel */}
-              <div className="absolute inset-0 bg-linear-to-t from-surface/30 to-transparent pointer-events-none" />
-            </div>
+            <PlaceholderImage
+              seed="nano-media-agency"
+              width={800}
+              height={1000}
+              alt="Nano Media office and team collaboration"
+              aspectRatio="aspect-4/5"
+              overlay
+              priority
+            />
 
             {/* Floating stat card */}
             <motion.div

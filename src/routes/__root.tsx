@@ -13,7 +13,7 @@ export const Route = createRootRoute({
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       ...seo({
         title:
-          "Nano Media — Expand Your Brand Through Measurable Digital Strategies",
+          "Nano Media | Expand Your Brand Through Measurable Digital Strategies",
         description:
           "Nano Media is an integrated digital marketing agency in Indonesia, devoted to sustainable growth and actionable digital strategies.",
       }),

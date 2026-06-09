@@ -16,7 +16,7 @@ export function Industries() {
         <SectionHeading
           eyebrow="Our Clients"
           heading="Over 800+ businesses growing with Nano Media"
-          description="From fashion to FMCGs, startups to corporations — we drive measurable growth across every industry."
+          description="From fashion to FMCGs, startups to corporations. We drive measurable growth across every industry."
         />
 
         {/* Tab filter */}
